@@ -2,7 +2,7 @@
 
 from pprint import pprint
 
-fasta_file = "both500.fa.out_both500_flank_500.fasta"
+fasta_file = "test.fasta"
 
 def parse_fasta(fname):
     with open(fname, "r") as fh:

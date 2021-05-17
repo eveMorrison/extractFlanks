@@ -1,12 +1,16 @@
+import re
+
 repMaskFile = open("test.fa.out", "r")
+
+for line in repMaskFile:
+   if re.search('^.+\d',line,0):
+      values = line.split()
+      id = values[14]
+      te_start = values[5]
+      te_end = values[6]
+
 
 linelist = repMaskFile.readlines()
 fileLeng = len(linelist)
-
-i = 3
-while(i<fileLeng):
-   values = linelist[i].split()
-   print('ID: ',values[14], '\nTransposon Start: ', values[5], '\nTransposon End: ', values[6] )
-   i+=1
  
 repMaskFile.close()

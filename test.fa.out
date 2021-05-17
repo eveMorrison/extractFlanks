@@ -9,11 +9,4 @@ score   div. del. ins.  sequence  begin    end          (left)   repeat        c
 14676    0.1  0.0  0.0  chr2      21193680 21195386 (17242912) + Polyphemus    Unspecified        2   1708    (0) 30911  
 15638    0.1  0.0  0.0  chr2      27095558 27097263 (11341035) + Polyphemus    Unspecified        2   1707    (1) 38166  
 15291    0.0  0.0  0.0  chr2      28183324 28185026 (10253272) C Polyphemus    Unspecified      (4)   1704      2 39763  
- 6118    0.1  0.3  0.2  chr2      33939260 33944559  (4493739) + (TTTGTAG)n    Simple_repeat      1   5305    (0) 47765  
-10096    4.0  1.0  2.7  chr2      35170327 35176253  (3262045) + (ATATTG)n     Simple_repeat      1   5927    (0) 48236  
-10096    4.0  1.0  2.7  chr2      35178124 35183561  (3254737) + (ATATTG)n     Simple_repeat   7579  13015    (0) 48237  
- 5249    0.6  0.0  0.0  chr2      35189612 35194176  (3244122) + (ATATTG)n     Simple_repeat      1   4565    (0) 48239  
-28696    2.2  0.2  0.2  chr2      36486015 36493000  (1945298) + (GATATT)n     Simple_repeat      1   6983    (0) 48747  
-28696    2.2  0.2  0.2  chr2      36493270 36513830  (1924468) + (GATATT)n     Simple_repeat   7231  27803    (0) 48748  
 15301    0.1  0.0  0.0  chr2      38022845 38024552   (413746) + Polyphemus    Unspecified        1   1708    (0) 49345  
- 6160    0.4  0.2  0.1  chr2      38431821 38437192     (1106) + (ATATTG)n     Simple_repeat      1   5381    (0) 49497  

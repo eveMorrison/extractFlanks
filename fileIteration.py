@@ -1,4 +1,4 @@
-repMaskFile = open("both500.fa.out", "r")
+repMaskFile = open("test.fa.out", "r")
 
 linelist = repMaskFile.readlines()
 fileLeng = len(linelist)

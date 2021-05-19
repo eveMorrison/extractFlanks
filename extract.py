@@ -32,7 +32,7 @@ def find_fa_seq(fname,leftFlank,rightFlank):
                 # This happens every time a sequence line is encountered.
                 sequence.append(line)
                 #corresponding found transposon will be within one code to find them all positions
-                if(left_flank_begin < leftFlank and right_flank_end > rightFlank):
+                if(left_flank_begin <= leftFlank and right_flank_end >= rightFlank):
                     # Start by yielding the entry that has been built up.
                     yield identifier, sequence
 

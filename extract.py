@@ -51,8 +51,11 @@ def parse_repMask(fname):
                 id = values[14]
                 te_start = values[5]
                 te_end = values[6]
+                te = values[9]
+                query_seq = values[4]
+
                 #return the Repeat Masker ID, transposon start position and transposon end position
-                yield id, te_start, te_end
+                yield id, te_start, te_end, te, query_seq
 
 #open the repeat masker file 
 #for every found transposon
@@ -60,6 +63,8 @@ def parse_repMask(fname):
 #finally print the found sequences for the trasnposon and the flanks to their corresponding files
 for entry in parse_repMask(repMask_file):
     te_id = entry[0]
+    te = entry[3]
+    query_sequence = entry[4]
     left_flank_end = int(entry[1])
     right_flank_begin = int(entry[2])
 
@@ -84,7 +89,7 @@ for entry in parse_repMask(repMask_file):
         #append transposon to TE fasta file
         transposon = coordinate[1][0][te_start : te_end+1]
         f = open("transposon.fasta", "a")
-        f.write(">" + te_id + "\n")
+        f.write(">" + te_id + "|" + query_sequence + "|" + te + "\n")
         f.write(transposon + "\n")
         f.close()
 

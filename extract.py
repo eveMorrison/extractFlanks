@@ -97,7 +97,7 @@ for entry in parse_repMask(repMask_file):
         #get sequence from beginning of string to beginning of transposon
         flankLeft = coordinate[1][0][ : te_start]
         f = open("leftFlanks.fasta", "a")
-        f.write(">" + te_id + "\n")
+        f.write(">" + te_id + "|" + query_sequence + "|" + te + "\n")
         f.write(flankLeft + "\n")
         f.close()
 
@@ -105,7 +105,7 @@ for entry in parse_repMask(repMask_file):
         #get sequence from beginning of transposon to end of the string
         flankRight = coordinate[1][0][te_end+1: ]
         f = open("rightFlanks.fasta", "a")
-        f.write(">" + te_id + "\n")
+        f.write(">" + te_id + "|" + query_sequence + "|" + te + "\n")
         f.write(flankRight + "\n")
         f.close()
 

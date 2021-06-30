@@ -1,7 +1,7 @@
 from pprint import pprint
 import re
 
-fasta_file = "nondys_60000_filter.fa.out_d9908dde-db5b-4e12-b663-d4f1e55d17c2_flank_500.fasta"
+fasta_file = "nondys_60000_flanks.fasta"
 repMask_file = "nondys_60000_filter.fa.out"
 
 

@@ -1,8 +1,8 @@
 from pprint import pprint
 import re
 
-fasta_file = "nondys_60000_flanks.fasta"
-repMask_file = "nondys_60000_filter.fa.out"
+fasta_file = "dys60000_flanks.fasta"
+repMask_file = "dys_60000_filter.fa.out"
 
 
 #find the corresponding fasta sequence to the repeatmasker output

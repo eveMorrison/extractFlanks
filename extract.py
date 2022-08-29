@@ -1,8 +1,8 @@
 from pprint import pprint
 import re
 
-fasta_file = "dys60000_flanks.fasta"
-repMask_file = "dys_60000_filter.fa.out"
+fasta_file = "dys180000_flanks.fasta"
+repMask_file = "dys_180000_filter.fa.out"
 
 
 #find the corresponding fasta sequence to the repeatmasker output
@@ -89,7 +89,7 @@ for entry in parse_repMask(repMask_file):
 
         #append transposon to TE fasta file
         transposon = coordinate[1][0][te_start : te_end+1]
-        f = open("transposon.fasta", "a")
+        f = open("transposon180000.fasta", "a")
         f.write(">" + te_id + "|" + query_sequence + "|" + te + "\n")
         f.write(transposon + "\n")
         f.close()
@@ -97,7 +97,7 @@ for entry in parse_repMask(repMask_file):
         #append flanking sequence to left flank fasta file
         #get sequence from beginning of string to beginning of transposon
         flankLeft = coordinate[1][0][ : te_start]
-        f = open("leftFlanks.fasta", "a")
+        f = open("leftFlanks180000.fasta", "a")
         f.write(">" + te_id + "|" + query_sequence + "|" + te + "\n")
         f.write(flankLeft + "\n")
         f.close()
@@ -105,7 +105,7 @@ for entry in parse_repMask(repMask_file):
         #append flanking sequence to right flank fasta file
         #get sequence from beginning of transposon to end of the string
         flankRight = coordinate[1][0][te_end+1: ]
-        f = open("rightFlanks.fasta", "a")
+        f = open("rightFlanks180000.fasta", "a")
         f.write(">" + te_id + "|" + query_sequence + "|" + te + "\n")
         f.write(flankRight + "\n")
         f.close()
